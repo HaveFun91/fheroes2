@@ -57,6 +57,7 @@ namespace
     }
 }
 
+//[[deprecated("Use fheroes2::showMessage instead")]]
 int Dialog::Message( const std::string & header, const std::string & message, int ft, int buttons )
 {
     outputInTextSupportMode( header, message, buttons );

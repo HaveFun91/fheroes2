@@ -91,7 +91,8 @@ namespace Dialog
     // additional area, the contents of which should be restored when the radar is redrawn (areaToRestore), can be optionally specified.
     void QuickInfo( const Castle & castle, const fheroes2::Point & position = {}, const bool showOnRadar = false, const fheroes2::Rect & areaToRestore = {} );
     void QuickInfo( const HeroBase & hero, const fheroes2::Point & position = {}, const bool showOnRadar = false, const fheroes2::Rect & areaToRestore = {} );
-
+    
+    //[[deprecated("Use fheroes2::showMessage instead")]]
     int Message( const std::string &, const std::string &, int ft, int buttons = 0 /* buttons: OK : CANCEL : OK|CANCEL : YES|NO */ );
     void ExtSettings( bool );
     int LevelUpSelectSkill( const std::string & name, const int primarySkillType, const Skill::Secondary & sec1, const Skill::Secondary & sec2, Heroes & hero );
